@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang = "es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width">
+        <link rel = "stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
+        
+    </head>
+    <body>
+        <header>
+            <div class="logoAlura">
+                <img src="../resources/img/logoAlura.png">
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <input required id="ingresar-texto" onkeyup="validar()" class="definirTexto" placeholder="Ingrese el texto aqui">
+                <img src="../resources/img/muestra.png" class="imgReferencia" id="imgReferencia">
+                <textarea id="mostrar_texto" class="mostrarTexto" readonly ></textarea>    
+            </form>
+            <div>
+                <button onclick="encrypt()" type="submit" class="btn-encrypt">Encriptar</button>
+                <button onclick="decrypt()" type="submit" class="btn-decrypt">Desencriptar</button>
+            </div>
+            <div>
+                <button onclick="copy()" type="submit" class="btn-copy" id="copy">Copiar</button>
+            </div>
+            <di>
+                <img src="../resources/img/muestraResponsiva.png" class="imgReferencia02" id="imgReferencia02">
+            </di>
+            <di>
+                <img src="../resources/img/muestraPhone.PNG" class="imgReferencia03" id="imgReferencia03">
+            </di>
+
+        </main>
+
+        <footer>
+            <p class="copyright">&copy; Copyright AraHg - 2023</p>
+        </footer>
+
+        <script type="text/javascript" src="../js/encrypt.js"></script>
+        
+    </body>
+</html>
+

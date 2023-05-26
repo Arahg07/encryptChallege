@@ -1,0 +1,296 @@
+body{
+    background: #F3F5FC;;
+}
+
+.logoAlura img{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    position: absolute;
+    width: 120px;
+    left: 40px;
+    top: 40px;
+}
+
+.definirTexto{
+    position: absolute;
+    width: 500px;
+    height: 48px;
+    left: 15%;
+    top: 168px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: #0A3871; 
+    padding-left: 10px;
+    background: #F3F5FC;;
+    border-style: none;
+    
+}
+.imgReferencia{
+    position: absolute;
+    left: 60%;
+    top: 100px;
+    width: 300px;
+    border-radius: 32px;
+}
+.mostrarTexto{
+    position: absolute;
+    width: 200px;
+    height: 405px;
+    left: 60%;
+    top: 100px;
+    background-color: transparent;
+    border-radius: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: #0A3871;
+    padding: 20px 50px;
+    border-style: none;
+}
+
+.btn-encrypt{
+    align-items: center;
+    padding: auto;
+    width: 250px;
+    height: 60px;
+    background: #0A3871;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    border: 1px solid #0A3871;
+    
+}
+
+.btn-encrypt:hover{
+    background: #356EA9; 
+    color: #ffffff;
+}
+
+.btn-decrypt{
+    align-items: center;
+    padding: auto;
+    width: 250px;
+    height: 60px;
+    background: #D8DFE8;
+    border-radius: 25px;
+    color: #0A3871;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    border: 1px solid #0A3871;
+    
+}
+
+.btn-decrypt:hover{
+    background: #356EA9; 
+    color: #ffffff;
+}
+
+.btn-decrypt, .btn-encrypt{
+    position: relative;
+    top: 450px;
+    left: 100px;
+}
+
+.btn-copy{
+    position:relative;
+    top: 400px;
+    left: 62%;
+    padding: auto;
+    width: 250px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 25px;
+    color: #0A3871;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    border: 1px solid #0A3871;
+    display: none;
+    
+}
+
+footer{
+    position: relative;
+    text-align: center;
+    margin-top: 500px;
+    
+    
+}
+.copyright{
+    color: #343A40;
+    font-size: 12px;
+    
+}
+
+.imgReferencia02{
+    position:absolute;
+    left: 30%;
+    top: 530px;
+    width: 300px;
+    display: none;
+}
+
+.imgReferencia03{
+    position:absolute;
+    left: 30%;
+    top: 570px;
+    width: 260px;
+    display: none;
+   
+}
+@media screen and (max-width:1070px){
+    
+    
+    .definirTexto{
+        width: 350px;
+        height: 35px;
+        font-size: 20px;
+        
+    }
+    .mostrarTexto{
+        width: 180px;
+        height: 300px;
+        font-size: 20px;
+
+    }
+   
+    .btn-copy{
+        width: 180px;
+        height: 50px;
+        left: 66%;
+        top: 300px;
+        font-size: 20px;
+
+    }
+    .imgReferencia{
+        height: 350px;
+    }
+    
+}
+
+
+@media screen and (max-width:720px){
+
+    .logoAlura img{
+        width: 100px;
+    }
+    .definirTexto{
+        width: 400px;
+        height: 40px;
+        left: 10%;
+        font-size: 25px;
+        
+    }
+    .btn-decrypt, .btn-encrypt{
+        top:350px;
+    }
+    .mostrarTexto{
+        width: 500px;
+        height: 200px;
+        left: 50px;
+        top: 480px;
+        background-color: #FFFFFF;
+    }
+    .imgReferencia{
+        display: none;
+    }
+    footer{
+        top:180px
+    }
+    .imgReferencia02{
+        display: revert;
+    }
+    .btn-copy{
+        width: 400px;
+        height: 40px;
+        left: 20%;
+        top: 590px;
+        font-size: 20px;
+    }
+    
+    
+}
+
+@media screen and (max-width:570px){
+
+   
+    .btn-decrypt, .btn-encrypt{
+        left: 50px;
+        width: 180px;
+        font-size: 20px;
+    }
+    .mostrarTexto{
+        width: 340px;
+        left: 30px;
+        
+    }
+    
+    .imgReferencia02{
+        top:520px;
+        left: 20%;
+    }
+    .btn-copy{
+        width: 300px;
+    }
+    
+}
+
+@media screen and (max-width:385px){
+
+   
+    .btn-decrypt, .btn-encrypt{
+        left: 80px;
+        width: 280px;
+        font-size: 25px;
+    }
+
+    .btn-decrypt{
+        top:380px;  
+    }
+    .definirTexto{
+        width: 320px;
+        left: 50px;
+    }
+    .mostrarTexto{
+        width: 340px;
+        left: 10px;
+        top: 550px;
+    }
+    
+    .imgReferencia02{
+        display: none;
+    }
+    .imgReferencia03{
+        display: revert;
+    }
+    footer{
+        top: 180px;
+        left: 20%;
+    }
+    .btn-copy{
+        width: 300px;
+    }
+    
+}
+
+@media screen and (max-width:325px){
+
+    .btn-decrypt, .btn-encrypt{
+        left: 50px;
+        width: 250px;
+
+    }
+    .mostrarTexto{
+        width: 260px;
+    }
+    .imgReferencia03{
+        left: 20%;
+        
+    }
+    
+    
+}
+
+
+
